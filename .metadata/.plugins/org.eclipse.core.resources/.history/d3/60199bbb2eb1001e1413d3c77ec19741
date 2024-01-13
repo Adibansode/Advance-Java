@@ -1,0 +1,11 @@
+package com.demo.test;
+
+import org.hibernate.SessionFactory;
+
+public class TestTablePerClass {
+	public static void main(String[] args) {
+		
+		SessionFactory sf=new Configuration().Configure().buildsessionfactory();
+		
+	}
+}

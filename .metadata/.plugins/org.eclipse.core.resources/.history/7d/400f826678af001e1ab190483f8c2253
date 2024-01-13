@@ -1,0 +1,17 @@
+package com.demo.Test;
+
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.demo.Models.*;
+public class TestHibernate {
+
+	public static void main(String[] args) {
+     Cars c1=new Cars(1,"Seedan","Swift");
+     SessionFactory sf=new Configuration().configure().buildSessionFactory();
+     
+
+	}
+
+}

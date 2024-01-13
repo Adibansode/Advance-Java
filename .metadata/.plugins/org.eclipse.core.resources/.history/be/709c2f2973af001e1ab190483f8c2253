@@ -1,0 +1,10 @@
+package com.demo.Models;
+
+public class Cars {
+	private int carid;
+	private String cartype;
+	 private String carname;
+	 
+	 
+
+}

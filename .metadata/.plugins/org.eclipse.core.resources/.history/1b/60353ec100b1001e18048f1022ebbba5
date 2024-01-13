@@ -1,0 +1,33 @@
+package com.demo.model;
+
+public class ContractEmployee extends Employee{
+	private int hrs;
+	private float rate;
+	public ContractEmployee() {
+		super();
+	}
+	public ContractEmployee(int hrs, float rate) {
+		super();
+		this.hrs = hrs;
+		this.rate = rate;
+	}
+	public int getHrs() {
+		return hrs;
+	}
+	public void setHrs(int hrs) {
+		this.hrs = hrs;
+	}
+	public float getRate() {
+		return rate;
+	}
+	public void setRate(float rate) {
+		this.rate = rate;
+	}
+	@Override
+	public String toString() {
+		return "ContractEmployee [hrs=" + hrs + ", rate=" + rate + "]";
+	}
+	
+	
+
+}

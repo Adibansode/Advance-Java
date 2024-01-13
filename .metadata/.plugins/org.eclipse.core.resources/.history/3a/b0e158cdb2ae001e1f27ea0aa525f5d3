@@ -1,0 +1,43 @@
+package com.demo.Dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+import java.util.ArrayList;
+
+import com.demo.Models.Students;
+
+public class EmpDaoImp implements IDaoEmp {
+   static Connection conn;
+   static PreparedStatement selemp; 
+   static {
+	   conn=DbUtil.GetMyConnection();
+	   try {
+		selemp=conn.prepareStatement("Select * from Employee");
+		
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	   
+   
+   }
+	public List<Students> DisplayEmp() {
+		List<Students> lst=new ArrayList<>();
+		try {
+			ResultSet rs=selemp.executeQuery();
+			while(rs.next())
+			{
+				Students e1=new Students(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4));
+				lst.add(e1);
+			}
+			
+		} catch (SQLException e) {
+			
+	         e.printStackTrace();
+		}
+		return lst;
+	}
+}

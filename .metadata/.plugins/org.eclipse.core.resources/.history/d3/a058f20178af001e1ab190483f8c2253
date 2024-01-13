@@ -1,0 +1,14 @@
+package com.demo.Test;
+import java.lang.module.Configuration;
+
+import com.demo.Models.*;
+import com.mysql.cj.xdevapi.SessionFactory;
+public class TestHibernate {
+
+	public static void main(String[] args) {
+      Cars c1=new Cars(1,"Seedan","Swiftvdi");
+      SessionFactory sf=new Configuration().configure().buildSessionFactory();
+
+	}
+
+}

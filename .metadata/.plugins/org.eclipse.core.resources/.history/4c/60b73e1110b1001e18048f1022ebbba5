@@ -1,0 +1,11 @@
+package com.demo.model;
+
+import java.sql.Date;
+
+public class Product {
+	private int pid;
+	private String pname;
+	private Date mdate;
+	
+
+}

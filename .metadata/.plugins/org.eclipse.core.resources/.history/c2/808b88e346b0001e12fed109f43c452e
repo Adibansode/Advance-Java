@@ -1,0 +1,29 @@
+package com.demo.test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.demo.Model2.Course;
+import com.demo.Model2.faculty;
+
+public class TestBiDirectional {
+	public static void main(String[] args) {
+		
+		Course c1=new Course(1,"dac",f1);
+		Course c2=new Course(2,"dbda",f2);
+		faculty f1=new faculty(1,"abc",c1);
+		faculty f2=new faculty(2,"xyz",c2);
+
+		  
+		  SessionFactory sf=(new Configuration().configure().buildSessionFactory());
+		  Session s1=sf.openSession();
+		  Transaction tr=s1.beginTransaction();
+		  
+		  tr.commit();
+		  s1.close();
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.demo.model;
+
+public class Address {
+	private int addid;
+	private String street;
+	private String city;
+	
+}

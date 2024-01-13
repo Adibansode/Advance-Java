@@ -1,0 +1,16 @@
+package com.demo.test;
+import java.util.Scanner;
+public class TestCrud {
+	public static void main(String[] args) {
+		int choice=0;
+		Scanner sc =new Scanner(System.in);
+		
+		switch(choice) {
+		case 1:
+			break;
+		}
+		
+		
+	}
+
+}

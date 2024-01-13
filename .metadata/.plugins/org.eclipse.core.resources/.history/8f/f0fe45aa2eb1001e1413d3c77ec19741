@@ -1,0 +1,9 @@
+package com.demo.test;
+
+public class TestTablePerClass {
+	public static void main(String[] args) {
+		
+		SessionFactory() sf=Configuration().Configure().buildsessionfactory();
+		
+	}
+}

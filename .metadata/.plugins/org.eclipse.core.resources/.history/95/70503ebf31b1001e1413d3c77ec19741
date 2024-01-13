@@ -1,0 +1,9 @@
+package com.demo.model;
+
+public class User {
+	private int uid;
+	private String uname;
+	private address add;
+	
+
+}

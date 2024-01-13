@@ -1,0 +1,13 @@
+package com.demo.model;
+
+import java.util.Set;
+
+public class Department {
+	private int dno;
+	private String dname;
+	private String dloc;
+	private Set<Employee> eset ;
+	
+	
+
+}

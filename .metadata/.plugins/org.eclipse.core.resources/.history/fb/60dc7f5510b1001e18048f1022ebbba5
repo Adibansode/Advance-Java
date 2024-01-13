@@ -1,0 +1,8 @@
+package com.demo.model;
+
+public class NonPerishableProduct extends Product{
+	private String category;
+	
+	
+
+}

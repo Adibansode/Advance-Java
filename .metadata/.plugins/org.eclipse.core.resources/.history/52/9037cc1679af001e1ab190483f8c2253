@@ -1,0 +1,23 @@
+package com.demo.Test;
+
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+import com.demo.Models.*;
+public class TestHibernate {
+
+	public static void main(String[] args) {
+     Cars c1=new Cars(1,"Seedan","Swift");
+     SessionFactory sf=new Configuration().configure().buildSessionFactory();
+     Session session=sf.openSession();
+     Transaction tr=session.beginTransaction();
+     session.save(c1);
+     tr.commit();
+     
+
+	}
+
+}

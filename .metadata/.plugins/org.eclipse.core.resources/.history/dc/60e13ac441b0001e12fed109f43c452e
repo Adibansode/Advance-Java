@@ -1,0 +1,10 @@
+package com.demo.Model2;
+@Entity
+@Table(name="Faculty11")
+public class faculty {
+	@Id
+ private int fid;
+ private String fname;
+ private Course c;
+ 
+}

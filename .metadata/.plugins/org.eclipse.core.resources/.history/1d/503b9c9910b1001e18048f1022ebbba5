@@ -1,0 +1,9 @@
+package com.demo.model;
+
+import java.sql.Date;
+
+public class PerishableProduct extends Product{
+	private Date expirydate;
+	
+	
+}

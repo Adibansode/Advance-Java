@@ -1,0 +1,11 @@
+package com.demo.test;
+
+
+public class TestBiDirectional {
+	public static void main(String[] args) {
+		
+		Course c1=new Course(1,"dac",f1);
+		
+	}
+
+}
