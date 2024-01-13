@@ -46,6 +46,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="ManyToManyprac"/>
+			<item value="ManyToMany"/>
 			<item value="HibernateCrud"/>
 			<item value="InheritanceTablePerClass"/>
 			<item value="InheritanceSingleTable"/>
@@ -55,6 +57,8 @@
 			<item value="HibernateApp"/>
 		</list>
 		<list key="name">
+			<item value="ManyToManyprac"/>
+			<item value="ManyToMany"/>
 			<item value="HibernateCrud"/>
 			<item value="InheritanceTablePerClass"/>
 			<item value="InheritanceSingleTable"/>
@@ -62,6 +66,8 @@
 			<item value="OneToOne"/>
 		</list>
 		<list key="artifactId">
+			<item value="ManyToManyprac"/>
+			<item value="ManyToMany"/>
 			<item value="HibernateCrud"/>
 			<item value="InheritanceTablePerClass"/>
 			<item value="InheritanceSingleTable"/>

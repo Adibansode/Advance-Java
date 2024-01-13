@@ -1,0 +1,18 @@
+package com.demo.test;
+
+public class TestHello {
+
+	private void main() {
+		ApplicationContext ctx=new ClassPathXmlApplicationContext("springconfig.xml");
+		System.out.println("before");
+		Hello hello=(Hello) ctx.getBean("hw");
+		System.out.println("after");
+		System.out.println(hello.sayHello());
+		Hello hello1=(Hello) ctx.getBean("hw");
+		System.out.println(hello1.sayHello());
+		
+
+
+	}
+
+}
