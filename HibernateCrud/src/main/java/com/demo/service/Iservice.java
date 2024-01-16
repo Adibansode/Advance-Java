@@ -12,4 +12,11 @@ public interface Iservice {
 
 	boolean DeleteByid(int id);
 
+	User getbyid(int uid);
+
+	boolean modifybyid(int id1, String nm, String str);
+
+	List<User> sortById();
+
+
 }

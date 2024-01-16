@@ -24,6 +24,15 @@ public class TestCrud {
 			System.out.println(ulist);
 			break;
 		case 3:
+			System.out.println("enter id to search");
+			int uid=sc.nextInt();
+			User u=iser.getbyid(uid);
+			if(u!=null) {
+				System.out.println(u);
+			}
+			else {
+				System.out.println("user not found");
+			}
 			break;
 		case 4:
 			System.out.println("Enter the user id");
@@ -39,8 +48,23 @@ public class TestCrud {
 			}
 			break;
 		case 5:
+			System.out.println("enter id to update");
+			int id1=sc.nextInt();
+			System.out.println("enter name to update");
+			String nm=sc.next();
+			System.out.println("enter street to update");
+			String str=sc.next();
+		status=iser.modifybyid(id1,nm,str);
+		if(status) {
+			System.out.println("Modified Successfully");
+		}
+		else {
+			System.out.println("id not foubd");
+		}
 			break;
 		case 6:
+			ulist=iser.sortById();
+			ulist.forEach(System.out::println);
 			break;
 		
 		case 7:

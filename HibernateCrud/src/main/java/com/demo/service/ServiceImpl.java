@@ -35,5 +35,22 @@ public class ServiceImpl implements Iservice{
 		boolean status=udao.DeletByID(id);
 		return status;
 	}
+	public User getbyid(int uid) {
+		
+		return udao.findbyid(uid);
+	}
+	public boolean modifybyid(int id1, String nm, String str) {
+		return udao.changebyid(id1,nm,str);
+	}
+	@Override
+	public List<User> sortById() {
+		
+		return udao.sortbyid();
+	}
+	
+	
+	
+	
+	
 
 }

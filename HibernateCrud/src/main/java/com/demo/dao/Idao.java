@@ -12,4 +12,11 @@ public interface Idao {
 
 	boolean DeletByID(int id);
 
+	User findbyid(int uid);
+
+	boolean changebyid(int id1, String nm, String str);
+
+	List<User> sortbyid();
+
+
 }

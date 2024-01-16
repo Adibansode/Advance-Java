@@ -46,6 +46,8 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="SpringMvc"/>
+			<item value="SpringMVCCrud"/>
 			<item value="ManyToManyprac"/>
 			<item value="ManyToMany"/>
 			<item value="HibernateCrud"/>
@@ -57,6 +59,8 @@
 			<item value="HibernateApp"/>
 		</list>
 		<list key="name">
+			<item value="SpringMvc"/>
+			<item value="SpringMVCCrud"/>
 			<item value="ManyToManyprac"/>
 			<item value="ManyToMany"/>
 			<item value="HibernateCrud"/>
@@ -66,6 +70,8 @@
 			<item value="OneToOne"/>
 		</list>
 		<list key="artifactId">
+			<item value="SpringMvc"/>
+			<item value="SpringMVCCrud"/>
 			<item value="ManyToManyprac"/>
 			<item value="ManyToMany"/>
 			<item value="HibernateCrud"/>
